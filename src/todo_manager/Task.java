@@ -1,3 +1,5 @@
+package todo_manager;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
@@ -65,7 +67,7 @@ public  void markAsComplete (){
         this.status =true;
         this.dueDate = dueDate.now();
 
-    System.out.println( getTaskName()+ "Task is now complete" + " at" + getDueDate());
+    System.out.println( getTaskName()+ "todo_manager.Task is now complete" + " at" + getDueDate());
 
 }
 
@@ -99,12 +101,12 @@ class TodoList{
        for(Task task :listOfTasks ){
            if(task.getTaskName().equals(taskname)) {
                int flag = listOfTasks.indexOf(taskname);
-               System.out.println("Task exists");
+               System.out.println("todo_manager.Task exists");
 
                return flag;
            }
        }
-        System.out.println("Task doesn't exist");
+        System.out.println("todo_manager.Task doesn't exist");
         return 0;
     }
 
@@ -117,7 +119,7 @@ if (index>0 && index < listOfTasks.size() ){
 
 }
   else{
-    System.out.println("Task can not be found");
+    System.out.println("todo_manager.Task can not be found");
 
 }
 

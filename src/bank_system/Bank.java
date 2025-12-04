@@ -1,3 +1,5 @@
+package bank_system;
+
 import java.util.ArrayList;
 
 public class Bank{
@@ -27,7 +29,7 @@ public class Bank{
 
     @Override
     public String toString() {
-        return "Bank{" +
+        return "bank_system.Bank{" +
                 "name='" + name + '\'' +
                 ", customer=" + customer +
                 '}';
@@ -43,7 +45,7 @@ for(Customer customer : customer){
     }
 
 }
-        System.out.printf("Customer (%s) wasn't found %n" ,customerName);
+        System.out.printf("bank_system.Customer (%s) wasn't found %n" ,customerName);
         return  null;
     }
 
@@ -117,7 +119,7 @@ public void printStatement(String name){
 
       @Override
       public String toString() {
-          return "Customer{" +
+          return "bank_system.Customer{" +
                   "name='" + name + '\'' +
                   ", initialDeposit=" + initialDeposit +
                   '}';

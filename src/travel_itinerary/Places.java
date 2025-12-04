@@ -1,3 +1,5 @@
+package travel_itinerary;
+
 import java.util.LinkedList;
 import java.util.Scanner;
 

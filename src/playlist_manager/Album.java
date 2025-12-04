@@ -1,10 +1,12 @@
+package playlist_manager;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Album {
-    private static String name;
-    private static String artist;
-    private static ArrayList<Song> songs;
+    private  String name;
+    private  String artist;
+    private  ArrayList<Song> songs;
 
     public static void main(String[] args) {
 
@@ -73,9 +75,9 @@ public class Album {
     }
 
     private boolean addToPlayList(int trackNumber, LinkedList<Song> playList) {
-        Song songAdd = songs.get(trackNumber);
+        Song songAdd = songs.get(trackNumber - 1);
 
-if(trackNumber>'0'&& trackNumber<= songs.size()) {
+if(trackNumber>0 && trackNumber<= songs.size()) {
 
     playList.add(songAdd);
 
