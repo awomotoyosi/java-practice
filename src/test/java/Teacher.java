@@ -5,7 +5,6 @@ public class Teacher {
     public String name;
 
     public String id;
-
     ArrayList<Student> students = new ArrayList<Student>(100);
 
     public Teacher(String name, String id) {
@@ -13,8 +12,6 @@ public class Teacher {
         this.id = id;
 
     }
-
-
     public static void main(String[] args) {
         Teacher firstTeacher = new Teacher("Temitope Williams", "101");
         Teacher secondTeacher = new Teacher("Temitayo Oloyin", "101");
@@ -27,7 +24,6 @@ public class Teacher {
         System.out.println("List of students:");
         firstTeacher.printDetails();
       secondTeacher.printDetails();
-
 
 
     }
@@ -56,7 +52,9 @@ public class Teacher {
 
 
         }
+        System.out.println(name+" has been added already");
         return null;
+
     }
 
     public void addStudent(String name, String id) {
